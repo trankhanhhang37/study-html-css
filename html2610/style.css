@@ -6,6 +6,13 @@
   width: auto;
   margin: auto;
 }
+header{
+  position: sticky;
+  top:0;
+  padding: 5px;
+  background-color: #cae8ca;
+  z-index: 1;
+}
 .simple {
   height: 85px;
 }
@@ -36,10 +43,10 @@ a:visited{
 }
 .banner {
   display: flex;
-  border-style: solid;
   justify-content: center; /* canh đều các thành phần gồm các gia trị bên trong*/
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 .banner > div {
   height: 500px;
@@ -50,6 +57,7 @@ a:visited{
 .picture1 {
   background-color: darkolivegreen;
   position: relative;
+  top: 0;
 }
 .picture1 > div {
   float:flex;
@@ -74,10 +82,23 @@ position: absolute;
  border-color: rgb(238, 234, 229);
 }
 .button01{
-  border-radius: 20px;
-  height: 40px;
-  width: 150px;
-  padding-bottom: 0%;
+  border-radius: 40px;
+  height: 45px;
+  width: 130px;
+  border: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+.button01:hover{
+  background-color: rgb(33, 88, 19);
+}
+.button02{
+  background-color: rgb(209, 235, 183); border-radius: 40px; height: 50px; width: 140px;
+  border: none;
+}
+.button02:hover{
+  background-color: rgb(108, 143, 74);
+  font-family: 'Times New Roman', Times, serif;
 }
 .picture2 {
   background-image: url(images/im02.jpg);
@@ -86,6 +107,14 @@ position: absolute;
 footer {
   background-color: rgb(9, 106, 9);
   height: 300px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
+  justify-content: center;
+  text-decoration: underline;
+  padding-top: 100px;
+  position: relative;
+  
 }
 .grid-container {
   display: grid;
@@ -127,12 +156,14 @@ input[type=text]{
   height: 40px;
   padding: 12px 10px;
   margin: 8px 8px;
-  display: inline-block;
-  border: 1px solid #ccc;
   border-radius: 20px;
-  box-sizing: border-box;
+  background-color: #f1f4f7;
+  border: none;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+}
+input:focus {
+  outline: none;
+  border: none;
 }
 input[type=submit]{
   width: 100px;
@@ -140,11 +171,14 @@ input[type=submit]{
   padding: 12px 10px;
   margin: 8px 8px;
   display: inline-block;
-  border: 1px solid #ccc;
   border-radius: 20px;
   box-sizing: border-box;
-  background-color: black;
-  color: #f1f4f7;
+  background-color: rgb(117, 152, 161);
+  color: #fcfdfc;
+  border:none;
+}
+input[type=submit]:hover{
+  background-color: rgb(43, 105, 59);
 }
 .box04{
   position: relative;
@@ -176,11 +210,52 @@ input[type=submit]{
   justify-content: center;
   padding: 40px 20px;
 }
-
 .item01{
   padding-top: 20px;
   border-radius: 70px;
   height: 70px;
   background-color: black;
- 
+}
+.phone{
+  color: rgb(169, 223, 177);font-size: 3em; padding-left: 8px;
+}
+.phone:hover{
+  color: rgb(19, 88, 36);
+}
+
+/*page landing*/
+.banner-landing{
+background-image: url(images/im03.jpg);
+height: 800px;
+width: 800px;
+border-radius: 60px;
+position: relative;
+margin:10px ;
+
+}
+.box01-landing{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color:#fcfdfc;
+  border-radius: 90px;
+  height: 180px;
+  width: 180px
+}
+.box02-landing{
+    float: left;
+    position: absolute;
+    bottom: 80px;
+    left:20px;
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+.product{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
