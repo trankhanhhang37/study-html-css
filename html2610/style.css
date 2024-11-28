@@ -5,6 +5,7 @@
 .wrapper {
   width: auto;
   margin: auto;
+  perspective: 1200px;
 }
 @media screen and (max-width: 700px) {
   .wrapper,
@@ -97,6 +98,7 @@ a:visited {
 }
 .button01:hover {
   background-color: rgb(33, 88, 19);
+  transform: scale(1.5);
 }
 .button02 {
   background-color: rgb(209, 235, 183);
@@ -275,7 +277,6 @@ input[type="submit"]:hover {
   padding-top: 30px;
   text-align: center;
   position: relative;
-  border: 2px coral solid;
 }
 .product > div {
   padding-left: 20px;
@@ -294,24 +295,134 @@ input[type="submit"]:hover {
 .product01 {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  /* flex-direction: row; */
   padding: 10px 10px;
   text-align: center;
   position: relative;
-  border: 2px coral solid;
   height: fit-content;
+  gap: 10px;
 }
-.product01 >div{
-  background-color: black;
+.box-z{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-90%, -50%);
-  transition-timing-function: color transform 5s;
+  top: 10px;
   color: whitesmoke;
+  transition: rotate 2s ease-in-out;
 }
-.product01 >div:hover{
-  transform: translate(20%, 50%);
-  color: green;
+.box-x{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: whitesmoke;
+  transition: rotate 2s ease-in-out;
+}.box-y{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: whitesmoke;
+  transition: rotate 2s ease-in-out;
 }
+.box-rotate{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: whitesmoke;
+  transition: rotate 10s ease-in-out;
+}
+.box-z:hover{
+  rotate: z 90deg;
+  color: rgb(25, 102, 25);
+  background-color: #f1f4f7;
+}
+.box-y:hover{
+  rotate: y 90deg;
+  color: rgb(25, 102, 25);
+  background-color: #f1f4f7;
+}
+.box-x:hover{
+  rotate: x 90deg;
+  color: rgb(25, 102, 25);
+  background-color: #f1f4f7;
+}
+.box-rotate:hover{
+  rotate: 2 1 2 180deg;
+  color: rgb(25, 102, 25);
+  background-color: #f1f4f7;
+}
+
+/* product - scale */
+.productScale {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  padding: 10px 10px;
+  text-align: center;
+  position: relative;
+  height: fit-content;
+  gap: 10px;
+  perspective: 400px;
+}
+.scale-z{
+  justify-content: center;
+  background-color: #466d2f;
+  position: absolute;
+  top: 10px;
+  color: whitesmoke;
+  transform-style: preserve-3d;
+  transform: scaleZ(10)}
+.scale-x{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: whitesmoke;
+  transition: rotate 2s ease-in-out;
+}.scale-y{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: whitesmoke;
+  transition: rotate 2s ease-in-out;
+}
+.scale-rotate{
+  justify-content: center;
+  background-color: rgb(70, 109, 47);
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: whitesmoke;
+  transition: rotate 10s ease-in-out;
+}
+.scale-z:hover{
+  transform: perspective(400px) scaleZ(2);
+    color: rgb(161, 48, 27);
+  background-color: #f1f4f7;
+}
+.scale-y:hover{
+  transform: scaleY(0.5) ;
+  color: rgb(161, 48, 27);
+  background-color: #f1f4f7;
+}
+.scale-x:hover{
+  transform: scale(-0.5, 1.5);
+  color: rgb(161, 48, 27);
+  background-color: #f1f4f7;
+}
+.scale-rotate:hover{
+  rotate: 2 1 2 180deg;
+  color: rgb(161, 48, 27);
+  background-color: #f1f4f7;
+}
+
+
