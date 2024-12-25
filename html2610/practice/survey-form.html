@@ -1,50 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Build a Survey Form</title>
-  <link href="styles.css" rel="stylesheet" />
-</head>
-
-<body>
-  <h1 id="title">Survey Form</h1>
-  <p id="description">Please fill out this form with the required information</p>
-  <form id="survey-form">
-    <fieldset>
-      <label id="name-label">Enter your name: <input id="name" type="text" required placeholder="Typing here"/></label>
-      <label id="email-label">Enter your mail: <input id="email"type="email"required placeholder="Typing here"/></label>
-      <label id="number-label">Enter your age: <input id="number" type="number" required 
-      placeholder="Your age" min="13" max="120"/></label>
-    </fieldset>
-    <fieldset>
-      <label >You can do it. Believe your life!
-         <select id="dropdown">
-           <option value="1">Yes, I can</option>
-           <option value="2">Yupp, I can</option>
-         </select>
-       </label>
-    </fieldset>
-    <fieldset>
-      <legend>Your future is your mindset</legend>
-      <label><input type="radio"  name="radio-buttons" value="0" class="inline" checked/> You will be get better</label>
-      <label><input type="radio" class="inline" value="1" name="radio-buttons"/> You try hard</label>
-    </fieldset>
-    <fieldset>
-      <legend>How do you look like</legend>
-      <label><input type="checkbox" name="checkbox-buttons" value="0" class="inline" /> Adorable</label>
-       <label><input type="checkbox" name="checkbox-buttons" value="1" class="inline" /> Confident</label>
-        <label><input type="checkbox" name="checkbox-buttons"value="2"  class="inline" /> Kind</label>
-         <label><input type="checkbox" name="checkbox-buttons"value="3"  class="inline" /> Friendly</label>
-    </fieldset>
-    <label for="text-area">Describe for you: 
-      <textarea id="text-area" cols="40" rows="4" placeholder="Typing here"></textarea>
-    </label>
-    <input id="submit" type="submit" value="Submit"/>
-  </form>
-</body>
-
-</html>
-<!-- 
+  <head>
+    <meta charset="UTF-8">
+    <title>Build a Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
 body {
   width: 100%;
   height: 100vh;
@@ -111,5 +71,59 @@ input[type="submit"] {
   border-color: white;
   min-width: 300px;
 }
+  </style>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required
+      information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name: <input id="name" type="text"
+            required placeholder="Typing here" /></label>
+        <label id="email-label">Enter your mail: <input id="email" type="email"
+            required placeholder="Typing here" /></label>
+        <label id="number-label">Enter your age: <input id="number"
+            type="number" required
+            placeholder="Your age" min="13" max="120" /></label>
+      </fieldset>
+      <fieldset>
+        <label>You can do it. Believe your life!
+          <select id="dropdown">
+            <option value="1">Yes, I can</option>
+            <option value="2">Yupp, I can</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Your future is your mindset</legend>
+        <label><input type="radio" name="radio-buttons" value="0" class="inline"
+            checked /> You will be get better</label>
+        <label><input type="radio" class="inline" value="1"
+            name="radio-buttons" /> You try hard</label>
+      </fieldset>
+      <fieldset>
+        <legend>How do you look like</legend>
+        <label><input type="checkbox" name="checkbox-buttons" value="0"
+            class="inline" /> Adorable</label>
+        <label><input type="checkbox" name="checkbox-buttons" value="1"
+            class="inline" /> Confident</label>
+        <label><input type="checkbox" name="checkbox-buttons" value="2"
+            class="inline" /> Kind</label>
+        <label><input type="checkbox" name="checkbox-buttons" value="3"
+            class="inline" /> Friendly</label>
+      </fieldset>
+      <label for="text-area">Describe for you:
+        <textarea id="text-area" cols="40" rows="4"
+          placeholder="Typing here"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+
+</html>
+<!-- 
+
 
  -->
