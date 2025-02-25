@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script.js"></script>
+        <title>Document</title>
+        <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            "navbar navbar"
+            "sidebar main"
+            "sidebar footer ";
+            border: 1px solid green;
+        }
+        nav{
+            height: 3rem;
+            position: sticky;
+            top: 0px;
+            grid-area: navbar;
+            background-color:aqua ;
+            padding: 1em;
+        }
+        aside{
+            height: calc(100vh - 3rem);
+            top: 3rem;
+            position: sticky;
+            grid-area: sidebar;
+            background-color: burlywood;
+        }
+        main{
+            grid-area: main;
+        }
+        footer{
+            grid-area: footer;
+            background-color: brown;
+            padding: 2em;
+        }
+        @media(max-width: 800px){
+            body{
+               grid-template-columns: 1fr;
+            }
+            aside{
+                position: fixed;
+                width: 300px;
+                display: none;
+            }
+            .show{
+                display: block;
+            }
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <button onclick="toggleSidebar()">button</button>
+           
+        </nav>
+        <aside id="sidebar">
+            <h1>home</h1>
+        </aside>
+        <main>
+            <p>TRAN KHANH HANG TEST</p>
+            <p>JavaScript is a cross-platform, object-oriented scripting
+                language. It is a small and lightweight language. Inside a host
+                environment (for example, a web browser), JavaScript can be
+                connected to the objects of its environment to provide
+                programmatic control over them.
+
+                JavaScript contains a standard library of objects, such as
+                Array, Date, and Math, and a core set of language elements such
+                as operators, control structures, and statements. Core
+                JavaScript can be extended for a variety of purposes by
+                supplementing it with additional objects; for example:
+
+                Client-side JavaScript extends the core language by supplying
+                objects to control a browser and its Document Object Model
+                (DOM). For example, client-side extensions allow an application
+                to place elements on an HTML form and respond to user events
+                such as mouse clicks, form input, and page navigation.
+                Server-side JavaScript extends the core language by supplying
+                objects relevant to running JavaScript on a server. For example,
+                server-side extensions allow an application to communicate with
+                a database, provide continuity of information from one
+                invocation to another of the application, or perform file
+                manipulations on a server.</p>
+            <p>JavaScript is a cross-platform, object-oriented scripting
+                language. It is a small and lightweight language. Inside a host
+                environment (for example, a web browser), JavaScript can be
+                connected to the objects of its environment to provide
+                programmatic control over them.
+
+                JavaScript contains a standard library of objects, such as
+                Array, Date, and Math, and a core set of language elements such
+                as operators, control structures, and statements. Core
+                JavaScript can be extended for a variety of purposes by
+                supplementing it with additional objects; for example:
+
+                Client-side JavaScript extends the core language by supplying
+                objects to control a browser and its Document Object Model
+                (DOM). For example, client-side extensions allow an application
+                to place elements on an HTML form and respond to user events
+                such as mouse clicks, form input, and page navigation.
+                Server-side JavaScript extends the core language by supplying
+                objects relevant to running JavaScript on a server. For example,
+                server-side extensions allow an application to communicate with
+                a database, provide continuity of information from one
+                invocation to another of the application, or perform file
+                manipulations on a server.</p>
+            <p>JavaScript is a cross-platform, object-oriented scripting
+                language. It is a small and lightweight language. Inside a host
+                environment (for example, a web browser), JavaScript can be
+                connected to the objects of its environment to provide
+                programmatic control over them.
+
+                JavaScript contains a standard library of objects, such as
+                Array, Date, and Math, and a core set of language elements such
+                as operators, control structures, and statements. Core
+                JavaScript can be extended for a variety of purposes by
+                supplementing it with additional objects; for example:
+
+                Client-side JavaScript extends the core language by supplying
+                objects to control a browser and its Document Object Model
+                (DOM). For example, client-side extensions allow an application
+                to place elements on an HTML form and respond to user events
+                such as mouse clicks, form input, and page navigation.
+                Server-side JavaScript extends the core language by supplying
+                objects relevant to running JavaScript on a server. For example,
+                server-side extensions allow an application to communicate with
+                a database, provide continuity of information from one
+                invocation to another of the application, or perform file
+                manipulations on a server.</p>
+            <p>JavaScript is a cross-platform, object-oriented scripting
+                language. It is a small and lightweight language. Inside a host
+                environment (for example, a web browser), JavaScript can be
+                connected to the objects of its environment to provide
+                programmatic control over them.
+
+                JavaScript contains a standard library of objects, such as
+                Array, Date, and Math, and a core set of language elements such
+                as operators, control structures, and statements. Core
+                JavaScript can be extended for a variety of purposes by
+                supplementing it with additional objects; for example:
+
+                Client-side JavaScript extends the core language by supplying
+                objects to control a browser and its Document Object Model
+                (DOM). For example, client-side extensions allow an application
+                to place elements on an HTML form and respond to user events
+                such as mouse clicks, form input, and page navigation.
+                Server-side JavaScript extends the core language by supplying
+                objects relevant to running JavaScript on a server. For example,
+                server-side extensions allow an application to communicate with
+                a database, provide continuity of information from one
+                invocation to another of the application, or perform file
+                manipulations on a server.</p>
+            <p>JavaScript is a cross-platform, object-oriented scripting
+                language. It is a small and lightweight language. Inside a host
+                environment (for example, a web browser), JavaScript can be
+                connected to the objects of its environment to provide
+                programmatic control over them.
+
+                JavaScript contains a standard library of objects, such as
+                Array, Date, and Math, and a core set of language elements such
+                as operators, control structures, and statements. Core
+                JavaScript can be extended for a variety of purposes by
+                supplementing it with additional objects; for example:
+
+                Client-side JavaScript extends the core language by supplying
+                objects to control a browser and its Document Object Model
+                (DOM). For example, client-side extensions allow an application
+                to place elements on an HTML form and respond to user events
+                such as mouse clicks, form input, and page navigation.
+                Server-side JavaScript extends the core language by supplying
+                objects relevant to running JavaScript on a server. For example,
+                server-side extensions allow an application to communicate with
+                a database, provide continuity of information from one
+                invocation to another of the application, or perform file
+                manipulations on a server.</p>
+
+        </main>
+        <footer>
+            <p>Chúc bạn may mắn</p>
+        </footer>
+
+    </body>
+</html>
