@@ -1,0 +1,192 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    max-width: 100%;
+  }
+  main{
+     display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 100px;
+  }
+  header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+   position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+  #header-img{
+    height: 100px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  .nav-link{
+   color: grey;
+   text-decoration: none;
+   margin-right: 60px;
+  }
+  .nav-link:hover{
+    color: black;
+  }
+  #video{
+     width: 560px;
+      height: 315px
+  }
+  #form {
+    display: grid; 
+    place-items: center;
+  }
+  input{
+    display: block;
+    text-align: center;
+    margin: 10px;
+  }
+  input[type="email"]{
+    width: 260px;
+    text-align: left;
+    border: 1px solid black;
+    height: 26px;
+  }
+  input[type="submit"]{
+    height: 40px;
+    width: 120px;
+    background-color: orange;
+    border-style: none;
+    color: black;
+    font-weight: 900;
+  }
+  input[type="submit"]:hover{
+    background-color: yellow;
+  }
+  .feature-item{
+    display : flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .feature-icon{
+    color: orange;
+    font-size: 46px;
+    width: 46px;
+    height: 46px;
+    object-fit: contain; 
+    
+  }
+  .feature-content > h2{
+    margin-bottom: 0;
+  }
+  .feature-content > p{
+    margin-top: 0;
+  }
+  .feature-content{
+    margin-left: 20px;
+  }
+  #price{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .price-item{
+    border: 1px solid;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Căn giữa tất cả phần tử con trong thẻ price-item */
+    justify-content: center;  /* Đảm bảo căn giữa theo chiều dọc */
+    text-align: center;
+  }
+  .not-div{
+     background-color: grey;
+    align-self: stretch;   /* bung toàn bộ chiều ngang của cha */
+    width: 100%;           /* cũng có thể dùng, hiệu quả tương tự */
+    text-align: center;
+  }
+  footer {
+    background-color: #e0e0e0; /* màu xám sáng */
+    padding: 20px 0;
+    width: 100%;
+    margin: auto
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 20px;
+    font-size: 14px;
+  
+  }
+  .footer-container ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-container ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  .footer-container p {
+    margin: 0;
+    color: #444;
+  }
+  footer > ul{
+    text-align: right;
+  }
+  @media only screen and (max-width: 768px){
+    body{
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      margin: 0 auto;
+      padding: 0
+  
+    }
+    #price{
+      display: grid;
+      grid-template-columns: 1fr;
+          place-items: center;
+      text-align: center
+  
+    }
+    /* footer{
+     width: 100%;
+    } */
+  }
+  @media only screen and (max-width: 680px){
+    #nav-bar >ul{
+      display: flex;
+      flex-direction: column;
+        } 
+  }
+  @media only screen and (max-width: 500px){
+    main{
+      padding-top: 200px
+    }
+      h1,h2, h3, p {
+      text-align: center;
+      /* font-size: 1em; */
+    }
+    header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+    }
+    .feature-icon{
+  display: none  }
+     #video{
+       width: auto
+     }
+   
+  }
